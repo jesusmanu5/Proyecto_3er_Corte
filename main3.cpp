@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string>
 #include <iomanip>
-
+#include "Cifrando.h"
 int n=0;
 int i=0;
 using namespace std;
@@ -105,6 +105,7 @@ int main()
                  case 2:
                         cout<<"Indique el texto a descodificar"<<endl;
                         gets(texto);
+                        cin>>cadena;
                         tam=strlen(texto);
                         for(int i=0;i<tam;i++)
                         {  
@@ -123,6 +124,8 @@ int main()
                            }
                         }
                         cout<<"Texto codificado a: "<<texto<<endl;
+                        descodifica(n, cadena); 
+                        cout << cadena << endl; 
                         system("PAUSE");
 			            system("cls");
                         break;
