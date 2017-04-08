@@ -5,6 +5,7 @@
 #include <string>
 #include <iomanip>
 #include "Cifrando.h"
+
 int n=0;
 int i=0;
 using namespace std;
